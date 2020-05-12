@@ -1,54 +1,39 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="/WEB-INF/fragments/header.jspf" %>
+<%@include file="/WEB-INF/fragments/header.jspf"%>
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="/new/css/add_item.css">
-        <title>Seliq - Add Item Page</title>
-    </head>
+<head>
+<link rel="stylesheet" type="text/css" href="/new/css/add_item.css">
+<title>Seliq - Add Item</title>
+</head>
 
-    <body>
-      
-    <main>
-        <div class="body_section">
+<body>
 
-            <div class="headings">
-                <h2>Add your item</h2>
-            </div>
+	<main class="body_section">
+		<div class="heading">
+			<h1>Add your item</h1>
+		</div>
 
-            <form class="f_container">
+		<form class="fcontainer">
+			<div class="row">
+				<div class="caption">Product Title</div>
+				<input type="text" placeholder="Enter the product title"
+					class="w100">
+			</div>
+			<div class="row">
+				<div class="caption">Product Description</div>
+				<textarea rows="6" class="desc_box w100"></textarea>
+			</div>
+			<div class="row">
+				<div class="caption">Add image</div>
+				<input type="file" accept="image" />
+			</div>
+			<input class="button" type="button" value="Upload">
+		</form>
 
-                <div class="caption">Product Title</div>
-
-                <div class="row">
-                    <input type="text" class="textbox w100">
-                </div>
-
-                <div class="caption">Product Description</div>
-
-                <div class="row">
-                    <textarea rows="5" class="desc_box w100">
-                        
-                    </textarea>
-                </div>
-
-                <div class="caption">Add image</div>
-
-                <div class="row">
-                    <input type="file" accept="image"/>
-                </div>
-
-
-                <input class="button" type="button" value="Upload">
-
-
-            </form>
-        </div>
-
-    </main>
-
+	</main>
 </body>
 
 </html>
-<%@include file="/WEB-INF/fragments/footer.jspf" %>
+<%@include file="/WEB-INF/fragments/footer.jspf"%>

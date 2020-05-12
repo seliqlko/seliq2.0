@@ -1,40 +1,37 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.util.*" %>
-<%@include file="/WEB-INF/fragments/header.jspf" %>
+<%@page import="java.util.*"%>
+<%@include file="/WEB-INF/fragments/header.jspf"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>SELIQ- Password Reset Page</title>
-        <link rel="stylesheet" type="text/css" href="/new/css/password_reset.css">
+<head>
+<title>SELIQ- Password Reset</title>
+<link rel="stylesheet" type="text/css"
+	href="/new/css/password_reset.css">
+</head>
+<body>
 
-    </head>
-    <body>
+	<main class="body_section">
 
-        <main>
-            <div class="body_section">
-                <div class="headings">
-                    <p>Enter your new password</p>
-                </div>
+		<form class="fcontainer"
+			action="/new/fc/ab?type=model&page=Update&email=<%=request.getParameter("email").toString()%>"
+			method="POST">
+			<div class="fheader">
+				<p>Enter your new password</p>
+			</div>
 
-                <form class="f_container" action="/new/fc/ab?type=model&page=Update&email=<%=request.getParameter("email").toString()%>" method="POST">
+			<div class="row">
+				<div class="caption">New password</div>
+				<input type="text" name="passwd">
+			</div>
 
-                    <div class="caption">New password</div>
+			<div class="row">
+				<div class="caption">Confirm password</div>
+				<input type="text">
+			</div>
+			<button type="submit" class="button">Reset</button>
+		</form>
 
-                    <div class="row">
-                        <input type="text" name="passwd" class="textbox w100">
-                    </div>
-
-                    <div class="caption">Confirm password</div>
-
-                    <div class="row">
-                        <input type="text" class="textbox w100">
-                    </div>
-                    <button type="submit" class="submit_button button">Reset</button>
-                </form>
-            </div>
-
-        </main>
-
-    </body>
+	</main>
+</body>
 </html>
-<%@include file="/WEB-INF/fragments/footer.jspf" %>
+<%@include file="/WEB-INF/fragments/footer.jspf"%>

@@ -1,43 +1,52 @@
-<%@ page pageEncoding="UTF-8" %>
+<%@ page pageEncoding="UTF-8"%>
 <footer class="page_footer">
 
-    <div class="wrap_one">
+	<div class="wrap_one">
 
-        <div class="Fcaption">
-            <a href="about.html">About SeliQ</a>
-        </div>
+		<div class="fcaption">
+			<a href="about.html">About Seliq</a>
+		</div>
 
-        <div class="Fcaption">
-            <a href="support.html">Support Us</a>
-        </div>
+		<div class="fcaption">
+			<a href="support.html">Support Us</a>
+		</div>
 
-        <div class="Fcaption">
-            <a href="privacy.html">Privacy</a>
-        </div>
+		<div class="fcaption">
+			<a href="privacy.html">Privacy</a>
+		</div>
 
-    </div>
+	</div>
 
-    <div class="wrap_two">
+	<div class="wrap_two">
 
-        <div class="Fcaption">Contact</div>
-        <ul>
-            <li class=contact_number>+98-1234567890</li>
-            <li class="email">Seliq@gmail.com</li>
-        </ul>
+		<div class="fcaption">
+			Contact
+			<ul>
+				<li class="f_row"><span class="s_icon_container"> <img
+						class="s_icon" src="icons/call.svg">
+				</span> +98-7269089026</li>
+				<li class="f_row"><span class="s_icon_container"> <img
+						class="s_icon" src="icons/email.svg">
+				</span> Seliq@gmail.com</li>
+			</ul>
+		</div>
+		<div class="fcaption">
+			Stay Connected
+			<ul>
+				<li class="f_row"><span class="s_icon_container"> <img
+						class="s_icon" src="icons/link.svg">
+				</span> <a href="http://www.facebook.com/Seliq"> Facebook</a></li>
+				<li class="f_row"><span class="s_icon_container"> <img
+						class="s_icon" src="icons/link.svg">
+				</span> <a href="http://www.instagram.com/Seliq">Instagram</a></li>
+			</ul>
+		</div>
+	</div>
 
-        <div class="Fcaption">Stay Connected</div>
-        <ul>
-            <li><a href="http://www.facebook.com/seliq">Facebook</a></li>
+	<div class="wrap_three">
 
-        </ul>
-    </div>
+		<div class="block">@2019 Dasauli , Lucknow , 226026</div>
 
-    <div class="wrap_three">
-
-        <div class="block">
-            @2019 Dasauli , Lucknow , 226026
-        </div>
-
-    </div>
+	</div>
 
 </footer>

@@ -1,39 +1,31 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="/WEB-INF/fragments/header.jspf" %>
+<%@include file="/WEB-INF/fragments/header.jspf"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Reset Password </title>
-        <link rel="stylesheet" type="text/css" href="/new/css/email_page.css">
+<head>
+<title>Seliq-Reset Password</title>
+<link rel="stylesheet" type="text/css" href="/new/css/email_page.css">
+</head>
+<body>
+	<main class="body_section">
+		<div class="fheader">
+			<p>Enter your email.</p>
+			<p>We will send the link to reset the password.</p>
+		</div>
 
-    </head>
-    <body>
-        <main>
-            <div class="body_section">
-                <div class="headings">
-                    <p>Enter your email. </p>
-                    <p>We will send the link to reset the password.</p>
-                </div>
+		<form class="fheader"
+			action="/new/fc/ab?page=ForgetPassword&type=model" method="POST">
 
-                <form class="f_container" action="/new/fc/ab?page=ForgetPassword&type=model" method="POST">
+			<div class="row">
+				<span class="icon_container"> <img class="icon"
+					src="/new/Icons/email.svg">
+				</span> <input type="email" id="email" name="email"
+					placeholder="Enter your email">
+			</div>
+			<button type="submit" class="button">Send Link</button>
 
-                    <div class="caption">Email</div>
-
-                    <div class="row">
-                        <input type="email" id="email" name="email" placeholder="Enter your email" class="textbox w100">
-                    </div>
-
-                    <%--<submit>
-                        <input class="button" type="button" value="Send link">
-
-
-                                </submit>--%>
-                    <button type="submit" class="submit_button button">Send Link</button>
-
-                </form>
-            </div>
-
-        </main>
-    </body>
+		</form>
+	</main>
+</body>
 </html>
-<%@include file="/WEB-INF/fragments/footer.jspf" %>
+<%@include file="/WEB-INF/fragments/footer.jspf"%>
