@@ -23,10 +23,10 @@
 			Contact
 			<ul>
 				<li class="f_row"><span class="s_icon_container"> <img
-						class="s_icon" src="icons/call.svg">
+						class="s_icon" src="/new/Icons/call.svg">
 				</span> +98-7269089026</li>
 				<li class="f_row"><span class="s_icon_container"> <img
-						class="s_icon" src="icons/email.svg">
+						class="s_icon" src="/new/Icons/email.svg">
 				</span> Seliq@gmail.com</li>
 			</ul>
 		</div>
@@ -34,10 +34,10 @@
 			Stay Connected
 			<ul>
 				<li class="f_row"><span class="s_icon_container"> <img
-						class="s_icon" src="icons/link.svg">
+						class="s_icon" src="/new/Icons/link.svg">
 				</span> <a href="http://www.facebook.com/Seliq"> Facebook</a></li>
 				<li class="f_row"><span class="s_icon_container"> <img
-						class="s_icon" src="icons/link.svg">
+						class="s_icon" src="/new/Icons/link.svg">
 				</span> <a href="http://www.instagram.com/Seliq">Instagram</a></li>
 			</ul>
 		</div>

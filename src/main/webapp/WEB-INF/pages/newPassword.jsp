@@ -13,7 +13,7 @@
 	<main class="body_section">
 
 		<form class="fcontainer"
-			action="/new/fc/ab?type=model&page=Update&email=<%=request.getParameter("email").toString()%>"
+			action="/new/fc?type=model&page=Update&email=<%=request.getParameter("email").toString()%>"
 			method="POST">
 			<div class="fheader">
 				<p>Enter your new password</p>

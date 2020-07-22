@@ -34,12 +34,12 @@
             			<div class="c_lower">
             				<div class=buttons_container>
             				
-                                <a href="/new/fc/ab?type=view&page=signup">
+                                <a href="/new/fc?type=view&page=signup">
                                 	<button class="c_button signin_button">
                                 		<p>Create account</p>
                                 	</button>
                                 </a>
-                                <a href="/new/fc/ab?type=view&page=loginpage">
+                                <a href="/new/fc?type=view&page=loginpage">
                                 	<button class="c_button login_button">
                                 	<p>Login</p>
                                 	</button>                 
@@ -51,7 +51,7 @@
                 <img class="s_icon"src="/new/Icons/password.svg"> 
             </span>
             <p>
-                <a href="/new/fc/ab?page=forgotPassword&type=view">Forgot password?</a>
+                <a href="/new/fc?page=forgotPassword&type=view">Forgot password?</a>
             </p>
 		</div>
 						</div>
@@ -89,7 +89,7 @@
             		<p>What are you looking for ?</p>
             	</div>
             	<div class="ct_container">
-                        <a href="/new/fc/ab?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -102,7 +102,7 @@
                                 
                             </div>
                         </a>
-                        <a href="/new/fc/ab?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/new/fc/ab?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/new/fc/ab?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -137,7 +137,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/new/fc/ab?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -149,7 +149,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/new/fc/ab?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -162,7 +162,7 @@
                             </div>
                         </a>
 
-                        <a href="/new/fc/ab?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view">
                             <div class="thumbs">
                                 <div class="image_container">
                                     <img class="thumb_background" src="/new/Images/vehicles.jpg" alt="Vehicles" />
@@ -172,7 +172,7 @@
                                  	<div class="inner_span"></div>
                                 </div>
                             </div></a>
-                         <a href="/new/fc/ab?page=product&type=view">
+                         <a href="/new/fc?page=product&type=view">
                             <div class="thumbs">
 
                                 <div class="image_container">

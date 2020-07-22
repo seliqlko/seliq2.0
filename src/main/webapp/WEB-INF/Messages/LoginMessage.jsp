@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>${requestScope.message}</h1>
-        <form method="POST" action="fc/ab?page=ImageUpload&type=model" enctype="multipart/form-data">
+        <form method="POST" action="fc?page=ImageUpload&type=model" enctype="multipart/form-data">
             <input type="file" name="file"/>
             <input type="submit" name="upload"/>
         </form>

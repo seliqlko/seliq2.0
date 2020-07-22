@@ -19,7 +19,7 @@ family=Poppins
 <body>
 
 	<nav class="navbar">
-		<a class="logo" href="/new/fc/ab?page=login&type=view"> <img
+		<a class="logo" href="/new/fc?page=login&type=view"> <img
 			src="/new/Images/logo.png"> <!-- height="50%" width="50%" alt="logo"> -->
 		</a>
 		<button onclick="toggle()" type="button" id="toggler">
@@ -31,14 +31,14 @@ family=Poppins
 			<%
 					String email = (String) session.getAttribute("email");
 				%>
-			<li><a class="nav_item" href="/new/fc/ab?type=view&page=additem">Post
+			<li><a class="nav_item" href="/new/fc?type=view&page=additem">Post
 					Free Ad</a></li>
 			<%
 					if (email == null) {
 				%>
 			<li><a class="nav_item"
-				href="/new/fc/ab?type=view&page=loginpage">LOGIN</a></li>
-			<li><a href="/new/fc/ab?type=view&page=signup" class="nav_item"> SIGNUP </a></li>
+				href="/new/fc?type=view&page=loginpage">LOGIN</a></li>
+			<li><a href="/new/fc?type=view&page=signup" class="nav_item"> SIGNUP </a></li>
 			<%
 					} else {
 				%>
@@ -54,8 +54,8 @@ family=Poppins
 				</div>
 			</li>-->
 			<li><a class="nav_item"
-				href="/new/fc/ab?type=view&page=profile">My Account</a></li>
-			<li><a href="/new/fc/?page=Logout&type=model" class="nav_item">Log Out</a></li>
+				href="/new/fc?type=view&page=profile">My Account</a></li>
+			<li><a href="/new/fc?page=Logout&type=model" class="nav_item">Log Out</a></li>
 			<%
 					}
 				%>

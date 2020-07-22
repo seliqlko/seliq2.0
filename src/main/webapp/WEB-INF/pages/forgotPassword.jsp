@@ -14,7 +14,7 @@
 		</div>
 
 		<form class="fheader"
-			action="/new/fc/ab?page=ForgetPassword&type=model" method="POST">
+			action="/new/fc?page=ForgetPassword&type=model" method="POST">
 
 			<div class="row">
 				<span class="icon_container"> <img class="icon"

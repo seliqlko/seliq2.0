@@ -20,12 +20,12 @@
 					<h2>Create your account</h2>
 					<p>
 						Already have an account ? <a
-							href="/new/fc/ab?type=view&page=loginpage">Login</a>
+							href="/new/fc?type=view&page=loginpage">Login</a>
 					</p>
 				</div>
 
 				<form class="inner_container"
-					action="/new/fc/?page=Registration&type=model" method="POST">
+					action="/new/fc?page=Registration&type=model" method="POST">
 
 					<div class="row">
 						<div class="caption">Name</div>

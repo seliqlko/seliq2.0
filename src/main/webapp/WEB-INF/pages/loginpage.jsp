@@ -12,7 +12,7 @@
 		<div class="heading">
 			<h1>Login to your account</h1>
 		</div>
-		<form class="fcontainer" action="/new/fc/?page=Login&type=model"
+		<form class="fcontainer" action="/new/fc?page=Login&type=model"
 			method="POST">
 
 			<div class="row">
@@ -37,12 +37,12 @@
 				class="s_icon" src="/new/Icons/password.svg">
 			</span>
 			<p>
-				<a href="/new/fc/ab?page=forgotPassword&type=view">Forgot
+				<a href="/new/fc?page=forgotPassword&type=view">Forgot
 					password?</a>
 			</p>
 		</div>
 		<p>
-			Create an account <a href="/new/fc/ab?type=view&page=signup">here</a>
+			Create an account <a href="/new/fc?type=view&page=signup">here</a>
 		</p>
 	</main>
 </body>

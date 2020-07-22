@@ -14,6 +14,6 @@
     <body>
         <h1>User not Found!</h1>
         <p>Kindly go back to login page</p>
-        <a href="/new/fc/ab?page=login&type=view">Login page</a>
+        <a href="/new/fc?page=login&type=view">Login page</a>
     </body>
 </html>

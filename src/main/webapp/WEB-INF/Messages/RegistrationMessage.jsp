@@ -15,6 +15,6 @@
         <h1>Registration Succesful!</h1>
         <br>
         <br>
-        <a href="/new/fc/ab?page=login&type=view">Login Page</a>
+        <a href="/new/fc?page=login&type=view">Login Page</a>
     </body>
 </html>
