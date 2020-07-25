@@ -335,6 +335,10 @@
     z-index: 2;
 }
 
+.t_button p{
+	color:#000;
+}
+
 .inner_span{
     position: absolute;
     justify-content: center;

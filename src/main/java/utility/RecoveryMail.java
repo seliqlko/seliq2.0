@@ -42,7 +42,7 @@ public class RecoveryMail {
 			msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(email));
 			msg.setSubject("Reset Password");
 			msg.setText("Click on the link below to reset your password");
-			msg.setText("http://localhost:8080/new/fc/ab?page=Recovery&type=model&email=" + email + "&otp=" + otp);
+			msg.setText("http://localhost:8080/new/fc?page=Recovery&type=model&email=" + email + "&otp=" + otp);
 			Transport.send(msg);
 		} catch (MessagingException ex) {
 			ex.printStackTrace();

@@ -1,7 +1,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page session="true" %>
 <%@include file="/WEB-INF/fragments/header.jspf" %>
-
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<c:if test="${not empty recovery}">
+    <script>
+    window.addEventListener("load",function(){
+         alert("${recovery}");
+    })
+    </script>
+</c:if>
 <!DOCTYPE html>
 <html>
     <head>
@@ -89,7 +96,7 @@
             		<p>What are you looking for ?</p>
             	</div>
             	<div class="ct_container">
-                        <a href="/new/fc?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view&category=households">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -102,7 +109,7 @@
                                 
                             </div>
                         </a>
-                        <a href="/new/fc?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view&category=fashion">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -113,7 +120,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/new/fc?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view&category=books">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -125,7 +132,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/new/fc?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view&category=electronics">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -137,7 +144,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/new/fc?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view&category=gadgets">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -149,7 +156,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/new/fc?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view&category=mobiles">
                             <div class="thumbs">
 
                                 <div class="image_container">
@@ -162,7 +169,7 @@
                             </div>
                         </a>
 
-                        <a href="/new/fc?page=product&type=view">
+                        <a href="/new/fc?page=product&type=view&category=vehicles">
                             <div class="thumbs">
                                 <div class="image_container">
                                     <img class="thumb_background" src="/new/Images/vehicles.jpg" alt="Vehicles" />
@@ -172,7 +179,7 @@
                                  	<div class="inner_span"></div>
                                 </div>
                             </div></a>
-                         <a href="/new/fc?page=product&type=view">
+                         <a href="/new/fc?page=product&type=view&category=others">
                             <div class="thumbs">
 
                                 <div class="image_container">

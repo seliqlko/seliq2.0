@@ -41,7 +41,8 @@ public class RegistrationModel implements ModelInterface {
 			rdao.toDbQuery(con, user);
 			MailSender mail = new MailSender();
 			mail.sendMail(request.getParameter("email"), code);
-			request.getRequestDispatcher("/WEB-INF/Messages/RegistrationMessage.jsp").forward(request, response);
+			request.setAttribute("recovery", "A mail has been sent to your email address");
+			request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request, response);
 
 		} catch (Exception ex) {
 			Logger.getLogger(RegistrationModel.class.getName()).log(Level.SEVERE, null, ex);

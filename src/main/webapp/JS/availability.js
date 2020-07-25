@@ -1,5 +1,4 @@
 function acaller(ffid,spid){
-    //alert("Hello");
     var data=document.getElementById(ffid).value;
     var xhr=new XMLHttpRequest();
     xhr.onreadystatechange=function () {
@@ -9,6 +8,6 @@ function acaller(ffid,spid){
             }
         }
     }
-    xhr.open("get","/new/fc/?page=AvailabilityCheck&type=model&email="+data,true);
+    xhr.open("get","/new/fc?page=AvailabilityCheck&type=model&email="+data,true);
     xhr.send(null);
 }
