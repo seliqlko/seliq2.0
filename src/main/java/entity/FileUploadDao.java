@@ -2,9 +2,8 @@ package entity;
 
 import java.io.InputStream;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-
-import com.mysql.jdbc.PreparedStatement;
 
 public class FileUploadDao {
 	public static int uploadFile(Connection con, String productName, String productDescription, InputStream file,
