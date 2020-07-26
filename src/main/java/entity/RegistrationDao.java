@@ -17,7 +17,7 @@ public class RegistrationDao {
 
 	public boolean toDbQuery(Connection con, User user) throws SQLException {
 		String query = "insert into user_master values('" + user.getFirstname() + "','" + user.getLastname() + "','"
-				+ user.getPhone() + "','Gen','" + user.getCity() + "','NULL');";
+				+ user.getPhone() + "','Gen','" + user.getCity() + "',NULL);";
 		String query1 = "insert into login_table values('" + user.getEmail() + "','" + user.getPassword() + "','"
 				+ user.getStatus() + "','" + user.getPhone() + "');";
 		Statement st = con.createStatement();
