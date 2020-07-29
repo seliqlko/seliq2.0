@@ -1,3 +1,30 @@
+
+/*Resetting*/
+
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+*{ 
+    box-sizing: border-box;
+}
+
+                    /*Global*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+body,p{
+    margin: 0px;
+    padding: 0px;
+} 
+
+
  :root{
     --pcolor:hsla(350,70%,50%,1);
     --pcolordark:hsla(350,70%,35%,1);
@@ -5,8 +32,8 @@
     --scolor:hsla(43,90%,50%,1);
     --success_color:rgb(0,255,0,1);
 }
- 
-input[type=text],.desc_box{
+
+select,input[type=number],input[type=text],.desc_box{
     border: 1px solid var(--pcolor);
     border-radius: 4px;
     height: 2.4rem;
@@ -14,7 +41,7 @@ input[type=text],.desc_box{
     font-size: 0.9rem;
 }
 
-input[type=text]:focus,.desc_box:focus{
+select:focus,input[type=number]:focus,input[type=text]:focus,.desc_box:focus{
     box-shadow:0px 0px 5px 0px var(--pcolor);
     outline: 0px;
 }
@@ -24,7 +51,7 @@ input[type=text]:focus,.desc_box:focus{
     position: relative;
     display: flex;
     width: 100%;
-    height: 650px;
+    height: 850px;
     padding-top: 50px;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +115,7 @@ input[type=text]:focus,.desc_box:focus{
 
 .button{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     width: 120px;
     font-size: var(--button_font_size);

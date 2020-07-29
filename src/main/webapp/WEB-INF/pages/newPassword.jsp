@@ -21,12 +21,12 @@
 
 			<div class="row">
 				<div class="caption">New password</div>
-				<input type="text" name="passwd">
+				<input type="password" name="passwd">
 			</div>
 
 			<div class="row">
 				<div class="caption">Confirm password</div>
-				<input type="text">
+				<input type="password">
 			</div>
 			<button type="submit" class="button">Reset</button>
 		</form>

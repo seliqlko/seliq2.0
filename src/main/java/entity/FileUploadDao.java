@@ -7,9 +7,9 @@ import java.sql.SQLException;
 
 public class FileUploadDao {
 	public static int uploadFile(Connection con, String productName, String productDescription, InputStream file,
-			String productCategory, String productPrice) {
+			String productCategory, String productPrice, String email) {
 		String SQL = "INSERT INTO products " + "(product_name, product_description, "
-				+ "photo,product_price, product_category) values (?, ?, ?,?,?)";
+				+ "photo,product_price, product_category,email) values (?, ?, ?,?,?,?)";
 		int row = 0;
 
 		PreparedStatement preparedStatement;
@@ -23,6 +23,8 @@ public class FileUploadDao {
 			preparedStatement.setString(4, productPrice);
 
 			preparedStatement.setString(5, productCategory);
+
+			preparedStatement.setString(6, email);
 
 			if (file != null) {
 

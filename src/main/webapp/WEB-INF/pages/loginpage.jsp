@@ -15,22 +15,22 @@
 		<form class="fcontainer" action="/new/fc?page=Login&type=model"
 			method="POST">
 
-			<div class="row">
+			<div class="row" id="email_box">
 				<span class="icon_container"> <img class="icon"
 					src="/new/Icons/profile.svg">
-				</span> <input type="email" placeholder="Your email" name="email"
+				</span> <input type="email"  placeholder="Your email" name="email"
 					class="w100">
 			</div>
 
-			<div class="row">
+			<div class="row" id="pass_box">
 				<span class="icon_container"> <img class="icon"
 					src="/new/Icons/forgot.svg">
-				</span> <input type="password" placeholder="Your Password" name="password"
+				</span> <input type="password"  placeholder="Your Password" name="password"
 					class="w100">
 			</div>
-			<div class="row">
-				<button type="submit" class="button">Login</button>
-			</div>
+			
+				<button type="submit" class="login_button"><p>Login</p></button>
+			
 		</form>
 		<div>
 			<span class="s_icon_container forgot_icon"> <img

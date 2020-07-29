@@ -33,8 +33,8 @@
             	<div class="cover_image">
             		<div class="c_container">
             			<div class="c_upper">
-            				<h1>Welcome to SeliQ</h1>
-            				<p class="text-muted">Sell anything here.</p>
+            				<h1>Welcome to Seliq</h1>
+            				
             				<p class="text-muted">Sell Online Quickly</p>
             			</div>
             			<% if (email == null) {%>

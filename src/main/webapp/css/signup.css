@@ -1,4 +1,30 @@
- :root{
+
+/*Resetting*/
+
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+*{ 
+    box-sizing: border-box;
+}
+
+                    /*Global*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+body,p{
+    margin: 0px;
+    padding: 0px;
+} 
+
+:root{
     --pcolor:hsla(350,70%,50%,1);
     --pcolordark:hsla(350,70%,35%,1);
     --pcolordarker:hsla(350,70%,30%,1);
@@ -151,10 +177,10 @@ input:focus{
  
 .button{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    width: 120px;
-    font-size: var(--button_font_size);
+    width: 150px;
+    font-size: 0.9em;
     height: 40px;
     border-radius: 40px;
     margin-top: 20px;
@@ -163,6 +189,7 @@ input:focus{
     color: #fff;
     border: 0px;
 }
+
 .button:hover{
     border: 2px solid var(--pcolor); 
     background-color: transparent;

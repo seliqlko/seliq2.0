@@ -66,7 +66,7 @@
             			</form>
             			<%
 						}else{%>
-            				<img class="profile_picture" src="ProfilePicDisplayer?email=<%=email%>" />
+            				<img style="width:100%;height:100%" class="profile_picture" src="ProfilePicDisplayer?email=<%=email%>" />
             			<%}
             			%>
 					</div>

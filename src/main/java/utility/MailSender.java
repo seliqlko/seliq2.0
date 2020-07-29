@@ -43,7 +43,7 @@ public class MailSender {
 			msg.setSubject("Welcome Mail");
 			msg.setText("Welcome to our site");
 			msg.setText("Click on the link below to activate your account");
-			msg.setText("http://localhost:8080/new/fc?page=Validate&type=model&code=" + code);
+			msg.setText("http://localhost:8082/new/fc?page=Validate&type=model&code=" + code);
 			Transport.send(msg);
 		} catch (MessagingException ex) {
 			ex.printStackTrace();

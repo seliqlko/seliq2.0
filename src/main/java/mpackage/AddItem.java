@@ -45,6 +45,7 @@ public class AddItem extends HttpServlet {
 		try {
 			Connection con = dao.toConnect(context.getInitParameter("url"), context.getInitParameter("username"),
 					context.getInitParameter("password"));
+			String email = request.getParameter("email");
 
 			String productName = request.getParameter("product_name");
 			String productDescription = request.getParameter("product_description");
@@ -74,7 +75,7 @@ public class AddItem extends HttpServlet {
 				inputStream = filePart.getInputStream();
 			}
 			int row = FileUploadDao.uploadFile(con, productName, productDescription, inputStream, productCategory,
-					productPrice);
+					productPrice, email);
 			if (row > 0) {
 				message = "File uploaded and " + "saved into database";
 			}

@@ -73,6 +73,7 @@ public class ProfilePicUpload extends HttpServlet {
 			if (row > 0) {
 				message = "File uploaded and " + "saved into database";
 			}
+			request.getRequestDispatcher("/WEB-INF/pages/profile.jsp").forward(request, response);
 			System.out.println(message);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

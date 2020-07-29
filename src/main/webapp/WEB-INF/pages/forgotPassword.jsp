@@ -22,7 +22,7 @@
 				</span> <input type="email" id="email" name="email"
 					placeholder="Enter your email">
 			</div>
-			<button type="submit" class="button">Send Link</button>
+			<button type="submit" class="button"><p>Send Link</p></button>
 
 		</form>
 	</main>

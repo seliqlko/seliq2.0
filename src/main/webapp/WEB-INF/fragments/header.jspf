@@ -33,6 +33,7 @@ family=Poppins
 				%>
 			<li><a class="nav_item" href="/new/fc?type=view&page=additem">Post
 					Free Ad</a></li>
+					<%request.setAttribute("email", email); %>
 			<%
 					if (email == null) {
 				%>

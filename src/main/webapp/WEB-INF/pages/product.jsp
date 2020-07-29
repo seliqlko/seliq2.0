@@ -32,20 +32,45 @@
     {
         String productName;
         String EmpSurname;
+        String productPrice;
         Integer productId;
         Dao dao = new Dao();
 		Connection con = dao.toConnect(context.getInitParameter("url"), context.getInitParameter("username"),
 				context.getInitParameter("password"));
 		Statement stmt = con.createStatement();
-        ResultSet rs = stmt.executeQuery("select product_id,product_name from products where product_category= '"+category+"';");
+        ResultSet rs = stmt.executeQuery("select product_id,product_name,product_price from products where product_category= '"+category+"';");
         while (rs.next()) 
         {
             productName = rs.getString("product_name");
             productId = rs.getInt("product_id");
+            productPrice = rs.getString("product_price");
             
             %>
-            <div class="product_thumb"><img src="ImageDisplayer?id=<%=productId%>" /></div>
-            <p><%=productName %></p>
+            <div class="product_thumb">
+            	<div class="pro_img">
+                	<img style ="height:100%;width:100%" src="ImageDisplayer?id=<%=productId%>" />
+                </div>
+            	<div class="pro_button primary">
+                
+			    <p class="pro_title"><%=productName %></p>
+			    
+    			<p class="pro_price"><%=productPrice%> Rs</p>
+                    
+                </div>
+                <div class="pro_button secondary">
+                
+                    
+                    <a href="/new/fc?type=view&page=description&pid=<%=productId %>" class="pro_desc">Info</a>
+                    
+                    <div class="add">
+                        Add to wishlist
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            
             <%
         }
         rs.close();
