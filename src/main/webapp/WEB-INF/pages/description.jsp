@@ -42,16 +42,39 @@ email = rs.getString("email");
 <html>
 <head>
 <meta charset="UTF-8">
-<title><% %></title>
+<title><%=productName %></title>
+<link rel="stylesheet" type="text/css" href="/new/css/desc.css">
 </head>
 <body>
-<div class="pro_img">
-                	<img style ="height:100%;width:100%" src="ImageDisplayer?id=<%=pid%>" />
-                </div>
-                <p><%=productName %></p>
-                <p><%=productPrice %></p>
-                <p><%=productDescription %></p>
-                <p><%=email %></p>
+<div class="f_container">
+	<div class="lefthalf">      
+                
+    <img style ="height:100%;width:100%" src="ImageDisplayer?id=<%=pid%>" />
+    
+    </div>
+</div>
+<div class="rightHalf">
+        
+            
+    <p class="pro_title">
+       <%=productName %>
+                
+    </p>
+    <p class="pro_price">
+        <%=productPrice %> Rs
+    </p>
+    <p class="pro_title">Posted by: <%=email %></p>
+    <p class="pro_desc">
+        <%=productDescription %>
+        
+    </p>
+    
+    <div class="row">
+    <button class="button" type="button">Add to wishlist</button>
+    </div>
+    
+</div>
+                
 </body>
  <%
         }
