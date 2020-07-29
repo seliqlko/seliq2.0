@@ -45,6 +45,7 @@
             
             %>
             <div class="product_thumb"><img src="ImageDisplayer?id=<%=productId%>" /></div>
+            <p><%=productName %></p>
             <%
         }
         rs.close();

@@ -79,6 +79,8 @@ public class AddItem extends HttpServlet {
 				message = "File uploaded and " + "saved into database";
 			}
 			System.out.println(message);
+			request.setAttribute("recovery", "Item has been successfully added");
+			request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request, response);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
