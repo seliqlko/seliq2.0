@@ -6,6 +6,9 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="/new/css/signup.css">
+
+<script src="/new/JS/jquery-3.5.1.min.js"></script>
+<script src="/new/JS/check.js"></script>
 <title>Seliq - Signup</title>
 <!--    Fonts-->
 </head>
@@ -24,7 +27,7 @@
 					</p>
 				</div>
 
-				<form class="inner_container"
+				<form class="inner_container" id="form"
 					action="/new/fc?page=Registration&type=model" method="POST">
 
 					<div class="row">
@@ -53,16 +56,17 @@
 					<div class="row">
 						<div class="caption">Password</div>
 						<input type="password" name="password"
-							placeholder="Enter Password" class="w50"> <input
+							placeholder="Enter Password" class="w50" id="idpassword"> <input
 							type="password" name="password2" placeholder="Confirm Password"
 							class="w50">
 
 					</div>
 
-					<button type="submit" class="button">
+					<button type="submit" class="button" disabled="false">
 					<p>Submit</p>
 					</button>
 				</form>
+				
 			</div>
 		</div>
 
